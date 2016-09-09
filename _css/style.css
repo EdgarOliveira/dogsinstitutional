@@ -1,0 +1,153 @@
+/***************************************************************/
+/************************** BODY *******************************/
+/***************************************************************/
+
+body {
+	font-size: small;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 180%;
+	background-color: #e6e6d9;
+	margin: 0
+}
+
+/***************************************************************/
+/************************* HEADER ******************************/
+/***************************************************************/
+
+header {
+	margin: 0;
+	text-align: center; /* Também centra imagens */
+	background-color: #c7c8bc;
+	position: relative;	
+}
+
+header figure {
+	margin: 0;
+	height: 231px;
+}
+
+header nav {
+	margin: 0;
+	background-color: #4CAF50;
+	font-size: 9px;
+	line-height: 16px;
+	height: 16px;
+}
+
+header nav ul {
+	margin: 0 auto;
+}
+
+header nav ul li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 15px;
+	letter-spacing: 6px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+header nav ul li a:hover {
+	color: #fc0;
+}
+
+.barras {
+	color: white;
+}
+
+/***************************************************************/
+/************************** MAIN *******************************/
+/***************************************************************/
+
+main {
+	margin: 0 20% 0 25%;	
+	color: #6b6c5a;
+}
+
+main figure {
+	margin-left: -70px;
+}
+
+main  figure:nth-child(1)  img {
+	border-radius: 100%;
+	border: 2px solid #F96E5B;
+	padding: 2px;
+}
+
+section {
+	overflow: hidden;
+}
+
+main section p {
+	width: 400px;
+	float: left;
+}
+
+main section figure {
+	margin: auto 0;
+}
+
+main section figure img {
+	margin: 13px auto;
+	float: right;
+	width: 150px;	
+}
+
+/***************************************************************/
+/************************* FOOTER ******************************/
+/***************************************************************/
+
+footer {
+	text-align: center;
+	margin-top: 30px;
+}
+
+
+footer nav {
+	margin: 0;
+	background-color: #4CAF50;
+	font-size: 9px;
+	line-height: 16px;
+	height: 16px;
+}
+
+footer nav ul {
+	margin: 0 auto;
+}
+
+footer nav ul li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 15px;
+	letter-spacing: 6px;
+}
+
+footer nav ul li a:hover {
+	color: #fc0;
+}
+
+/******************************************************************/
+/* added https://github.com/adobe-webplatform/css-shapes-polyfill */
+/******************************************************************/
+
+.floating {
+	margin: 10px 10px 0 0;
+	/* Vai dar forma à imagem, a image tem que ser um quadrado perfeito */
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	/* Vai dar forma ao texto */			
+	-webkit-shape-outside: circle();
+	shape-outside: circle();
+}
+.left {
+	float: left;
+}
+.shape {
+    float: left;
+    shape-outside: circle(50%);
+    shape-margin: 1em;
+}
